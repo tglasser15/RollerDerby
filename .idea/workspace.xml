@@ -2,96 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f26bd35d-49d2-4fa0-86ce-d5f9ce3eb9ff" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\config.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\hooks\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\hooks\after_prepare\010_add_platform_class.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\ionic.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\scss\ionic.app.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\css\ionic.app.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\css\ionic.app.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\img\ionic.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\js\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\js\controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\css\ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\css\ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\fonts\ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\fonts\ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\fonts\ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\fonts\ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular-ui\angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular-ui\angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\angular\angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\ionic-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\ionic-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\ionic.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\ionic.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\ionic.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\js\ionic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_action-sheet.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_backdrop.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_badge.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_button-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_button.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_checkbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_form.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_items.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_platform.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_radio.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_refresher.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_slide-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_spinner.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_toggle.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_transitions.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_util.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\ionic.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\ionicons\_ionicons-font.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\ionicons\_ionicons-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\ionicons\_ionicons-variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\scss\ionicons\ionicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\ionic\version.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\jquery-1.8.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\moment-with-locales.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\parse-1.3.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\lib\underscore-1.4.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\templates\browse.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\templates\pages\login.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\templates\pages\menu.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\templates\playlist.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\templates\playlists.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerby\www\templates\search.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerbyPad\www\css\style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RollerDerbyPad/www/js/app.js" afterPath="$PROJECT_DIR$/RollerDerbyPad/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RollerDerbyPad/www/index.html" afterPath="$PROJECT_DIR$/RollerDerbyPad/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/login.html" afterPath="$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/loginController.js" afterPath="$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/loginController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RollerDerbyPad/.idea/workspace.xml" afterPath="$PROJECT_DIR$/RollerDerbyPad/.idea/workspace.xml" />
     </list>
     <ignored path="RollerDerby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,8 +27,55 @@
   <component name="FavoritesManager">
     <favorites_list name="RollerDerby" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.206897">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.05711086">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/registerController.js" />
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/js/app.js" />
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/loginController.js" />
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/index.html" />
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/css/app.css" />
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/register.html" />
+        <option value="$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/login.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
@@ -133,7 +97,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -149,7 +113,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,13 +121,222 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RollerDerbyPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerbyPad\www\templates\pages" />
+      <recent name="C:\Users\Tommy\Documents\GitHub\RollerDerby\RollerDerbyPad\www\js\controllers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -178,23 +350,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -205,5 +377,95 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/shellController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.6">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/loginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8848283">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/shellController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/js/controllers/registerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.846154">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.206897">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RollerDerbyPad/www/templates/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05711086">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
