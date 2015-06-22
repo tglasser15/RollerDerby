@@ -1,20 +1,20 @@
-rollerDerby.factory('toastService', function ($rootScope, configService) {
+// service for handling toast notifications
+rollerDerby.factory('toastService', function($rootScope, messageService) {
+   var
+       general = function (message) {
+           $rootScope.$broadcast(messageService.messages.toast, message, 'general');
+       },
 
-    var
-        info = function(message) {
-            $rootScope.$broadcast(configService.messages.toast, {message: message}, 'info');
-        }
-        , error = function(message) {
-            $rootScope.$broadcast(configService.messages.toast, {message: message}, 'error');
-        }
-        , success = function(message) {
-            $rootScope.$broadcast(configService.messages.toast, {message: message}, 'success');
-        };
+       success = function(message) {
+           $rootScope.$broadcast(messageService.messages.toast, message, 'success');
+       },
 
-
-    return {
-        info: info,
-        error: error,
-        success: success
+       error = function(message) {
+           $rootScope.$broadcast(messageService.messages.toast, message, 'error');
+       }
+    ; return {
+        general: general,
+        success: success,
+        error: error
     }
 });

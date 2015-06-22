@@ -1,22 +1,27 @@
 <ion-view view-title="Log In" ng-controller="loginController as loginCtrl">
     <ion-content class="login-page">
-
-        <form name="loginForm" class="list list-inset">
-
-            <div class="logo">
-                <img src="img/sample/grey-logo-large.png"/>
+        <div class="card">
+            <div class="item item-divider">
+                Roller Derby 2.0
             </div>
+            <div class="item item-text-wrap">
+                <form name="loginForm" class="list list-inset login-form">
+                    <label class="item item-input">
+                        <span class="input-label">Email</span>
+                        <input type="text" ng-model="user.email" placeholder="Email" required>
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Password</span>
+                        <input type="password" ng-model="user.password" placeholder="Password" required>
+                    </label>
+                </form>
+            </div>
+            <div class="popup-buttons">
+                <button ng-click="login(user)" class="button button-positive">Log In</button>
+                <button ng-click="signUp()" class="button button-calm">Sign up</button>
+            </div>
+        </div>
 
-            <label class="item item-input">
-                <input type="text" ng-model="loginCtrl.user.email" placeholder="Email" required>
-            </label>
-            <label class="item item-input">
-                <input type="password" ng-model="loginCtrl.user.password" placeholder="Password" required>
-            </label>
-
-            <button ng-click="loginCtrl.login()" class="button button-block button-positive">Log In</button>
-            <button ng-click="loginCtrl.signUp()" class="button button-block button-calm">Sign up</button>
-        </form>
 
     </ion-content>
 </ion-view>

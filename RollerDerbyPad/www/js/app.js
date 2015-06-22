@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-// 'starter.controllers' is found in controllers.js
+
 var rollerDerby = angular.module('rollerDerby', ['ionic'])
     .config(function($stateProvider, $urlRouterProvider) {
       $stateProvider
@@ -15,7 +15,24 @@ var rollerDerby = angular.module('rollerDerby', ['ionic'])
       .state('login', {
         url: "/login",
         templateUrl: "templates/pages/login.html"
-      });
+      })
+      .state('register', {
+        url: "/register",
+        templateUrl: "templates/pages/register.html"
+      })
+      .state('home', {
+        url: "/home",
+        templateUrl: "templates/pages/home.html"
+      })
+      .state('teams', {
+        url: "/teams",
+        templateUrl: "templates/pages/teams.html"
+      })
+      .state('games', {
+        url: "/games",
+        templateUrl: "templates/pages/games.html"
+      })
+      ;
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/login');
     })

@@ -1,0 +1,26 @@
+<ion-view view-title="Team" ng-controller="teamController as teamCtrl">
+    <ion-content class="team-page">
+        <div class="card">
+            <div class="item item-divider">
+                <label class="item item-input item-select">
+                    <span class="input-label">My Roster</span>
+                    <select data-ng-model="registerCtrl.user.state" ng-options="v for (k, v) in registerCtrl.states">
+                        <option value="">Select a Team</option>
+                    </select>
+                </label>
+            </div>
+            <div class="item item-text-wrap">
+                <div class="list card">
+                    <a ng-click="gamePopup()" class="item item-icon-left">
+                        <i class=""></i>
+                        Player here (click here to edit player information)
+                    </a>
+                </div>
+            </div>
+            <div class="popup-buttons">
+                <button class="button button-positive" ng-click="addTeam()">Add a new team</button>
+                <button class="button button-positive">Add a new player</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

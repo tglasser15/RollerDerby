@@ -1,0 +1,93 @@
+/* Login Page */
+.login-page {
+    width: 100%;
+    padding: 20% 30%;
+}
+
+/* Register page*/
+.register-page {
+
+    padding: 0% 15%;
+}
+
+/* Home page*/
+.home-page {
+    width: 100%;
+    padding: 15% 20%;
+}
+
+/* Team page*/
+.team-page .input-label {
+    color: #222;
+    font-weight: 500;
+}
+
+.team-page .item-select  {
+    background-color: #f5f5f5;
+}
+
+/* Settings page*/
+.settings-page {
+    width: 100%;
+    padding: 0 15%;
+}
+
+/* modal functionality*/
+.popup-container .popup.account, .popup-container .popup.team {
+    width: 600px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.popup-title {
+    font-size: larger;
+}
+
+.popup-container .popup {
+    background-color: #dddddd;
+}
+
+/* Form validation fields*/
+.item-input input {
+    width: 95%;
+    background-color: 1px solid #DDD;
+}
+
+.item {
+    padding-bottom: 8px;
+}
+
+.item-select select {
+    padding-bottom: 13px;
+}
+
+.login-page .item.item-divider {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.register-page .item.item-divider {
+    padding-left: 45%;
+    padding-right: 45%;
+}
+
+select.ng-invalid-required.ng-touched,
+input.ng-invalid-email.ng-touched,
+input.ng-invalid-required.ng-touched {
+    background-color: #FFE1E1;
+}
+
+.errorMsg {
+    color: red;
+    font-size: small;
+}
+
+.tabs {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs-icon-left.tabs .tab-item, .tabs-icon-left > .tabs .tab-item, .tabs-icon-right.tabs .tab-item, .tabs-icon-right > .tabs .tab-item {
+    font-size: 18px;
+}
+

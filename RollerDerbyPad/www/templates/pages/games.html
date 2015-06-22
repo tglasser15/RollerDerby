@@ -1,0 +1,21 @@
+<ion-view view-title="Game" ng-controller="gameController as gameCtrl">
+    <ion-content class="game-page">
+        <div class="card">
+            <div class="item item-divider">
+                List of games
+            </div>
+            <div class="item item-text-wrap">
+                <div class="list card">
+                    <a ng-click="gamePopup()" class="item item-button-right">
+                        Game here (click to view/edit me) -> game information (when and where)
+                        <button class="button button-positive">Start</button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="popup-buttons">
+                <button class="button button-positive">Add a new game </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,20 +1,16 @@
+// the shell controller acts as a wrapper around all other controllers - directly related to index.html
 rollerDerby.controller('shellController',
-    function shellController($scope, $rootScope, $timeout, $ionicLoading, viewService, configService) {
+    function shellController($scope, $rootScope, $timeout, $ionicLoading, viewService, messageService, dataService, $ionicPopup) {
         var self = this;
 
+        // the first page to show up is the login page
         $scope.currentPage = 'login';
 
-        $scope.$on('$ionicView.enter', function(event) {
-
-        });
-
-        self.logout = function() {
-            viewService.logOut();
-            viewService.goToPage('/login')
+        $scope.goToPage = function(path) {
+            viewService.goToPage(path);
         };
 
-
-
+        // detects navigation
         $scope.$on('$locationChangeSuccess', function (next, current) {
             $timeout(function() {
                 // check if user is logged in if accessing most pages
@@ -27,55 +23,72 @@ rollerDerby.controller('shellController',
                     }
                 }
 
+                // split the URL down to just the page name
                 $scope.currentPage = current.split('#')[1] ? current.split('#')[1].split('/')[1] : '';
-                $rootScope.$broadcast(configService.messages.navigate, $scope.currentPage);
+                //$rootScope.$broadcast(configService.messages.navigate, $scope.currentPage);
 
             });
         });
 
 
-        // ------------- Toast Functions ------------- \\
-        $scope.toasts = [];
-
-        $scope.$on(configService.messages.toast, function (event, message, type, callback) {
-            showToast(message.message, type, callback);
-        })
-
-        var showToast = function (message, type, callback) {
-            // New Toast Item
-            var item = {
+        //// ------------- Toast Functions ------------- \\
+        //$scope.toasts = [];
+        //
+        $scope.$on(messageService.messages.toast, function (event, message, type) {
+            $scope.toast = {
+                toggle: true,
                 message: message,
-                error: type === 'error',
-                success: type === 'success',
-                slideIn: true,
-                slideOut: false
+                type: type
             };
+            $timeout(function() {
+                $scope.toast.toggle = false;
+            }, 3000);
+        });
 
-            $timeout(function () {
-                $scope.toasts.push(item);
-            });
+        // modal functionality
+        $scope.currentModal = '';
 
-            if (callback) {
-                callback = $scope.closeToast(item);
-                return;
+        $scope.$on(messageService.messages.openModal, function(event, modal) {
+            if (modal) {
+                $timeout(function() {
+                    $scope.currentModal = modal;
+                });
+
             }
+        });
 
-            $timeout(function () {
-                $scope.closeToast(item);
-            }, 5000);
+        $scope.$on(messageService.messages.closeModal, function(event, modal) {
+            if (modal) {
+                $timeout(function() {
+                    $scope.currentModal = '';
+                });
+
+            }
+        });
+
+        $scope.openModal = function(modal) {
+            $scope.currentModal = modal;
         };
 
-        $scope.closeToast = function (item) {
-            if ($scope.toasts.indexOf(item) == -1) {
-                return;
-            }
-
-            // Wait for animation to finish before removing toast
-            item.slideOut = true;
-            $timeout(function () {
-                // do closing animation
-                $scope.toasts.splice($scope.toasts.indexOf(item), 1);
-            },1000);
-        }
-        // ------------- END Toast Functions ------------- \\
+        $scope.$on(messageService.messages.confirmPopup, function(event, data) {
+            var myPopup = $ionicPopup.show({
+                title: 'Do you really wish to delete your account?',
+                scope: $scope,
+                buttons: [
+                    { text: 'No' },
+                    {
+                        text: '<b>Yes</b>',
+                        type: 'button-positive',
+                        onTap: function(e) {
+                            return 'Yes';
+                        }
+                    }
+                ]
+            });
+            myPopup.then(function(res) {
+                $timeout(function() {
+                    $rootScope.$broadcast(messageService.messages.popupMsg, res);
+                });
+            });
+        });
     });

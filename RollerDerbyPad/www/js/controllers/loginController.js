@@ -1,54 +1,39 @@
 rollerDerby.controller('loginController',
-    function loginController(viewService, toastService, dataService, configService, $timeout, $ionicPopup) {
+    function loginController(viewService, toastService, dataService, messageService, $timeout, $scope) {
         var self = this;
 
-        self.user = {
-            email: 'Sounders@mailinator.com',
-            password: '123'
+        $scope.init = function() {
+            $scope.user = {
+                email: 'tommy@example.com',
+                password: '123'
+            };
         };
 
-        self.init = (function() {
-            if (Parse.User.current()) {
-                viewService.goToPage('/games');
-            }
-        })();
+        $scope.init();
 
-        self.login = function() {
-            if (viewService.validateAreaByFormName('loginForm')) {
-                Parse.User.logIn(self.user.email, self.user.password, {
-                    success: function (user) {
-                        console.log(user);
-                        var name = user.get('name');
-                        toastService.success(configService.toasts.loginSuccess(name));
-                        viewService.goToPage('/games');
+        // login function
+        $scope.login = function(user) {
+            if(viewService.validateAreaByFormName('loginForm'))
+            {
+                dataService.logIn(user).then(function(user) {
+                    viewService.goToPage('/home');
+                    $timeout(function() {
+                        toastService.success(messageService.toast.loginSuccess(user));
+                    });
 
-                        // Todo: Get ALL THE DATA
-                        dataService.init(function() {
+                }, function(error) {
+                    $timeout(function() {
+                        toastService.error(messageService.toast.error(error));
+                    });
 
-                        });
-
-                    },
-                    error : function(error) {
-                        toastService.error('Error!');
-                    }
                 });
+            } else {
+                toastService.error(messageService.toast.missingFields);
             }
-            else {
-                // Todo: Toast
-                console.log('Login failed');
-                toastService.error(configService.toasts.requiredFields);
+        };
 
-            }
-        }
-
-        self.signUp = function() {
-            var alertPopup = $ionicPopup.alert({
-                title: 'Register Online',
-                template: 'Go to soccerstats.com to register as a coach and invite parents or players to your team! Then come back and login to start tracking stats.'
-            });
-            alertPopup.then(function(res) {
-                console.log('Alert Closed');
-            });
-        }
+        $scope.signUp = function() {
+            viewService.goToPage('/register');
+        };
 
     });

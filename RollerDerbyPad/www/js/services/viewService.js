@@ -1,18 +1,33 @@
-rollerDerby.factory('viewService', function ($location, $timeout) {
-
+// handles the navigation between pages and basic modal views
+rollerDerby.factory('viewService', function ($location, $timeout, $rootScope, messageService) {
     var
         goToPage = function(path) {
             $timeout(function() {
                 $location.path(path);
             });
         }
+
+        , closeModal = function (modal) {
+            $rootScope.$broadcast(messageService.messages.closeModal, modal);
+        }
+
+        , openModal = function (modal) {
+            $rootScope.$broadcast(messageService.messages.openModal, modal);
+        }
+
+        , confirmPopup = function() {
+            $rootScope.$broadcast(messageService.messages.confirmPopup);
+        }
+
+    // Credit to Alec Moore: https://github.com/alecmmoore
         , validateAreaByFormName = function (form) {
-            // Find all the required fields
             var isValid = true;
+            // for each of the input and select fields on the form
             _.each($('form[name=' + form + '] input, form[name=' + form + '] select'), function (field) {
+                // if the field is required, check for value input
                 if ($(field).is('[required]')) {
 
-                    // Simulate the blur on the
+                    // Simulate the blur on the field
                     $(field).addClass('ng-touched');
 
                     // Is there a value? set to ng-valid
@@ -28,24 +43,16 @@ rollerDerby.factory('viewService', function ($location, $timeout) {
 
                 }
             });
-
+            // return form validation
             return isValid;
-        }
-        ,logOut = function() {
-            Parse.User.logOut();
-            window.localStorage['currentGame'] = '';
-            window.localStorage['currentTeam'] = '';
-              window.localStorage['gameStats'] = [];
-                window.localStorage['players'] = [];
-                  window.localStorage['games'] = [];
-                  window.localStorage['teams'] = [];
-            goToPage('/login');
         };
 
     return {
-        goToPage: goToPage,
-        validateAreaByFormName: validateAreaByFormName,
-        logOut: logOut
+        goToPage: goToPage
+        , closeModal: closeModal
+        , openModal: openModal
+        , confirmPopup: confirmPopup
+        , validateAreaByFormName: validateAreaByFormName
     }
 
 });

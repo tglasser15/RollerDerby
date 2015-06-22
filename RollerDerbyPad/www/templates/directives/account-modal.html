@@ -1,0 +1,53 @@
+<div class="popup account">
+    <div class="popup-head">
+        <h3 class="popup-title">Account Details</h3>
+        <!-- ngIf: subTitle -->
+        <h5 ng-if="error.status" class="popup-sub-title">{{error.msg}}</h5>
+        <!-- end ngIf: subTitle -->
+    </div>
+    <div class="popup-body">
+        <form name="accountForm">
+            <div class="list list-inset">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="johndoe@example.com" ng-model="user.email" required>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">New Password</span>
+                    <input type="password" ng-model="user.password">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Confirm Password</span>
+                    <input type="password" ng-model="user.confirmPassword">
+                    <span class="errorMsg" ng-show="!checkPassword(user)">*Passwords do not match</span>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">First Name</span>
+                    <input type="text" placeholder="John" ng-model="user.firstName" required>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Last Name</span>
+                    <input type="text" placeholder="Doe" ng-model="user.lastName" required>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">City</span>
+                    <input type="text" placeholder="Spokane" ng-model="user.city" required>
+                </label>
+                <label class="item item-input item-select">
+                    <span class="input-label">State</span>
+                    <select ng-model="user.state" ng-options="v for (k, v) in states" required>
+                        <option value="">Select a State</option>
+                    </select>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="popup-buttons">
+        <button class="button button-positive" ng-click="saveChanges(user)">Save Changes</button>
+        <button class="button button-assertive" ng-click="deleteAccount(user)">Delete my account</button>
+        <button class="button button-light" ng-click="closeModal()">Exit</button>
+    </div>
+</div>
+
+
+

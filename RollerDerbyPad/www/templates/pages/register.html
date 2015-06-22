@@ -1,0 +1,49 @@
+<ion-view view-title="Register" ng-controller="registerController as registerCtrl">
+    <ion-content class="register-page">
+        <div class="card">
+            <div class="item item-text-wrap">
+                <form name="registerForm">
+                    <div class="list">
+                        <div class="list list-inset">
+                            <label class="item item-input item-stacked-label">
+                                <span class="input-label">Email</span>
+                                <input type="email" placeholder="johndoe@example.com" ng-model="user.email" required>
+                            </label>
+                            <label class="item item-input item-stacked-label">
+                                <span class="input-label">Password</span>
+                                <input type="password" ng-model="user.password" required>
+                            </label>
+                            <label class="item item-input item-stacked-label">
+                                <span class="input-label">Confirm Password</span>
+                                <input type="password" ng-model="user.confirmPassword" required>
+                                <span class="errorMsg" ng-show="!checkPassword(user)">*Passwords do not match</span>
+                            </label>
+                            <label class="item item-input item-stacked-label">
+                                <span class="input-label">First Name</span>
+                                <input type="text" placeholder="John" ng-model="user.firstName" required>
+                            </label>
+                            <label class="item item-input item-stacked-label">
+                                <span class="input-label">Last Name</span>
+                                <input type="text" placeholder="Doe" ng-model="user.lastName" required>
+                            </label>
+                            <label class="item item-input item-stacked-label">
+                                <span class="input-label">City</span>
+                                <input type="text" placeholder="Spokane" ng-model="user.city" required>
+                            </label>
+                            <label class="item item-input item-select">
+                                <span class="input-label">State</span>
+                                <select data-ng-model="user.state" ng-options="v for (k, v) in states" required>
+                                    <option value="">Select a State</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-buttons">
+                <button class="button button-balanced" ng-click="register(user)">Register</button>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
