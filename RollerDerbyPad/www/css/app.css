@@ -22,6 +22,11 @@
     font-weight: 500;
 }
 
+.team-page {
+    width: 100%;
+    padding: 0 10%;
+}
+
 .team-page .item-select  {
     background-color: #f5f5f5;
 }
@@ -43,6 +48,11 @@
     font-size: larger;
 }
 
+.card-title {
+    font-size: larger;
+    text-align: center;
+}
+
 .popup-container .popup {
     background-color: #dddddd;
 }
@@ -53,9 +63,9 @@
     background-color: 1px solid #DDD;
 }
 
-.item {
-    padding-bottom: 8px;
-}
+/*.item {*/
+    /*padding-bottom: 8px;*/
+/*}*/
 
 .item-select select {
     padding-bottom: 13px;
@@ -91,3 +101,20 @@ input.ng-invalid-required.ng-touched {
     font-size: 18px;
 }
 
+.row.header {
+    font-weight: bold;
+    border-top: none;
+}
+
+.row {
+    border-top: 1px solid #ddd;
+}
+
+.button.button-positive.viewStats {
+    margin-top: 5px;
+    /*float: right;*/
+}
+
+.col {
+    text-align: center;
+}

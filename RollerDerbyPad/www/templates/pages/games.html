@@ -2,19 +2,50 @@
     <ion-content class="game-page">
         <div class="card">
             <div class="item item-divider">
-                List of games
+                <h1 class="card-title">Games</h1>
             </div>
             <div class="item item-text-wrap">
                 <div class="list card">
-                    <a ng-click="gamePopup()" class="item item-button-right">
-                        Game here (click to view/edit me) -> game information (when and where)
-                        <button class="button button-positive">Start</button>
-                    </a>
+                    <div class="row header">
+                        <div class="col">Date</div>
+                        <div class="col">Home</div>
+                        <div class="col">Visitor</div>
+                        <div class="col">Location</div>
+                        <div class="col">Difference</div>
+                        <div class="col">Status</div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a ng-click="" class="item">
+                                <i class=""></i>
+                                Date
+                            </a>
+                        </div>
+                        <div class="col">
+                            <p class="item">home</p>
+                        </div>
+                        <div class="col">
+                            <p class="item">visitor</p>
+                        </div>
+                        <div class="col">
+                            <p class="item">location</p>
+                        </div>
+                        <div class="col">
+                            <p class="item">100</p>
+                        </div>
+                        <div class="col">
+                            <p class="item">status</p>
+                        </div>
+                        <div class="col" ng-click="">
+                            <button class="button button-positive viewStats" ng-click="">View Game</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
             <div class="popup-buttons">
-                <button class="button button-positive">Add a new game </button>
+                <button class="button button-positive" ng-click="addGame()">Add a new game </button>
             </div>
         </div>
     </ion-content>

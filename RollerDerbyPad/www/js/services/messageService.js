@@ -11,6 +11,11 @@ rollerDerby.factory('messageService', function () {
             , popupMsg: 'popupMsg'
             , updateUser: 'updateUser'
             , teamInit: 'teamInit'
+            , gameInit: 'gameInit'
+            , editTeam: 'editTeam'
+            , regTeam: 'regTeam'
+            , addPlayer: 'addPlayer'
+            , editPlayer: 'editPlayer'
         }
 
         , toast: {
@@ -22,8 +27,14 @@ rollerDerby.factory('messageService', function () {
             }
             , registerSuccess: 'You have successfully created an account'
             , registerTeam: 'You have successfully created a new team'
+            , registerPlayer: 'You have successfully created a new player'
             , missingFields: 'Please fill out all required fields'
             , accountSaved: 'Your profile has been successfully updated'
+            , logoutSuccess: 'You have successfully logged out of your account'
+            , updateTeamSuccess: 'Your team has been updated'
+            , updatePlayerSuccess: 'Your player has been updated'
+            , teamRemoved: 'Team has been removed'
+            , playerRemoved: 'Player has been removed'
         }
 
         , popup: {

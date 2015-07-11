@@ -9,16 +9,52 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
         // static set of age groups
         , ageGroup = {junior:"junior", older:"older"}
 
+        , currentTeam = {}
         // Parse tables
         , userTable = Parse.Object.extend("_User")
         , teamTable = Parse.Object.extend("Team")
+        , playerTable = Parse.Object.extend("Players")
+        , gameTable = Parse.Object.extend("Game")
 
         // get functions
         , getCurrentUser = function() {
             return Parse.User.current();
         }
 
+        , getCurrentTeam = function() {
+            return currentTeam;
+        }
+
+        , getTeams = function() {
+            var currentUser = getCurrentUser();
+            var teams = [];
+            var query = new Parse.Query(userTable);
+            query.include("teams");
+            return query.get(currentUser.id);
+        }
+
+        , getPlayers = function() {
+            var team = getCurrentTeam();
+            var query = new Parse.Query(playerTable);
+            query.equalTo("team", team);
+            return query.find();
+        }
+
+        , getTeam = function(teamId) {
+            var query = new Parse.Query(teamTable);
+            return query.get(teamId);
+        }
+
+        , getPlayer = function(playerId) {
+            var query = new Parse.Query(playerTable);
+            return query.get(playerId);
+        }
+
         // set functions
+
+        , setCurrentTeam = function(team) {
+            currentTeam = team;
+        }
 
         // other functions
         , logIn = function(user) {
@@ -36,6 +72,7 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
             user.set("lastName", newUser.lastName);
             user.set("city", newUser.city);
             user.set("state", newUser.state);
+            user.set("teams", []);
             return user.signUp();
         }
 
@@ -46,7 +83,39 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
             newTeam.set("ageGroup", team.ageGroup);
             newTeam.set("city", team.city);
             newTeam.set("state", team.state);
+            newTeam.set("players", []);
             return newTeam.save();
+        }
+
+        , registerPlayer = function(player) {
+            //console.log(player);
+            var newPlayer = new playerTable();
+            var team = getCurrentTeam();
+            newPlayer.set("name", player.firstName + " " + player.lastName);
+            newPlayer.set("team", team);
+            newPlayer.set("playerNumber", player.number);
+            newPlayer.set("firstName", player.firstName);
+            newPlayer.set("lastName", player.lastName);
+            newPlayer.set("city", player.city);
+            newPlayer.set("state", player.state);
+            return newPlayer.save();
+        }
+
+        , registerGame = function(game) {
+            var newGame = new gameTable();
+            newGame.set("date", game.date);
+            newGame.set("homeTeam", game.home);
+            newGame.set("visitorTeam", game.visitor);
+            newGame.set("location", game.city + " " + game.state);
+            newGame.set("city", game.city);
+            newGame.set("state", game.state);
+            return newGame.save();
+        }
+
+        , addTeamToUser = function(team) {
+            var currentUser = getCurrentUser();
+            currentUser.addUnique("teams", team);
+            return currentUser.save();
         }
 
         , updateAccount = function(user) {
@@ -64,25 +133,75 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
             return currentUser.save();
         }
 
+        , updateTeam = function(team, parseTeam) {
+            parseTeam.set("teamName", team.teamName);
+            parseTeam.set("leagueName", team.leagueName);
+            parseTeam.set("ageGroup", team.ageGroup);
+            parseTeam.set("city", team.city);
+            parseTeam.set("state", team.state);
+            return parseTeam.save();
+        }
+
+        , updatePlayer = function(player, parsePlayer) {
+            parsePlayer.set("name", player.firstName + " " + player.lastName);
+            parsePlayer.set("playerNumber", player.number);
+            parsePlayer.set("firstName", player.firstName);
+            parsePlayer.set("lastName", player.lastName);
+            parsePlayer.set("city", player.city);
+            parsePlayer.set("state", player.state);
+            return parsePlayer.save();
+        }
+
         , removeAccount = function() {
             var currentUser = getCurrentUser();
             return currentUser.destroy();
         }
 
+        , removeTeamFromUser = function(teamId) {
+            var currentUser = getCurrentUser();
+            var t = _.find(currentUser.get("teams"), function(obj){return obj.id == teamId});
+            currentUser.remove("teams", t);
+            return currentUser.save();
+        }
+
+        , removeTeam = function(team) {
+            return team.destroy();
+        }
+
+        , removePlayer = function(player) {
+            return player.destroy();
+        }
+
         , logOut = function() {  //on logout, clear local storage for next visit
             Parse.User.logOut();
+            toastService.success(messageService.toast.logoutSuccess);
             viewService.goToPage('/login');
         }
         ; return {
         states: states
         , ageGroup: ageGroup
+        , currentTeam: currentTeam
         , getCurrentUser: getCurrentUser
+        , getTeams: getTeams
+        , getPlayers: getPlayers
+        , getTeam: getTeam
+        , getPlayer: getPlayer
         , register: register
         , registerTeam: registerTeam
+        , registerPlayer: registerPlayer
+        , registerGame: registerGame
+        , addTeamToUser: addTeamToUser
         , updateAccount: updateAccount
+        , updateTeam: updateTeam
+        , updatePlayer: updatePlayer
         , removeAccount: removeAccount
+        , removeTeamFromUser: removeTeamFromUser
+        , removeTeam: removeTeam
+        , removePlayer: removePlayer
         , logIn: logIn
         , logOut: logOut
+        , getCurrentTeam: getCurrentTeam
+        , setCurrentTeam: setCurrentTeam
     }
 
 });

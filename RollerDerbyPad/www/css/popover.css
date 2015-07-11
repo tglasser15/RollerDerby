@@ -1,0 +1,16 @@
+.item.item-icon-left.pop {
+    font-size: 20px;
+    text-shadow: 0px 0px #000;
+}
+
+.item .pop {
+    padding-bottom: 0;
+}
+
+.item-icon-left .icon.pop {
+    top: 5px;
+}
+
+h1.title.pop {
+    font-size: 22px;
+}

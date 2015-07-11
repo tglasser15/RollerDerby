@@ -1,6 +1,6 @@
 <div class="popup team">
     <div class="popup-head">
-        <h3 class="popup-title">Create a New Team</h3>
+        <h3 class="popup-title">{{title}}</h3>
         <!-- ngIf: subTitle -->
         <h5 ng-if="error.status" class="popup-sub-title">{{error.msg}}</h5>
         <!-- end ngIf: subTitle -->
@@ -36,7 +36,8 @@
         </form>
     </div>
     <div class="popup-buttons">
-        <button class="button button-positive" ng-click="registerTeam(team)">Register Team</button>
+        <button ng-if="!team.update" class="button button-positive" ng-click="registerTeam(team)">Register Team</button>
+        <button ng-if="team.update" class="button button-balanced" ng-click="editTeam(team)">Save Changes</button>
         <button class="button button-light" ng-click="closeModal()">Exit</button>
     </div>
 </div>

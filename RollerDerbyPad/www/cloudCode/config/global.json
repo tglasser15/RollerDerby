@@ -1,0 +1,17 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "RollerDerby": {
+      "applicationId": "34iDj6jw35nwLlefkMt9JReR5OeJ2yl2VB5vOnfz",
+      "masterKey": "RjF9WPLvORR0d8bmx6SJSvYB2eX4KJ4cZodV3my2"
+    },
+    "_default": {
+      "link": "RollerDerby"
+    },
+    "cloudCode": {
+      "link": "RollerDerby"
+    }
+  }
+}

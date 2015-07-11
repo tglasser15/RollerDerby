@@ -1,0 +1,46 @@
+<div class="popup team">
+    <div class="popup-head">
+        <h3 class="popup-title">{{title}}</h3>
+        <!-- ngIf: subTitle -->
+        <h5 ng-if="error.status" class="popup-sub-title">{{error.msg}}</h5>
+        <!-- end ngIf: subTitle -->
+    </div>
+    <div class="popup-body">
+        <form name="gameForm">
+            <div class="list list-inset">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Date</span>
+                    <input type="date" ng-model="game.date" required>
+                </label>
+                <label class="item item-input item-select">
+                    <span class="input-label">Home Team</span>
+                    <select ng-model="game.home" ng-options="team.get('teamName') for team in teams" required>
+                        <option value="">Select a Team</option>
+                    </select>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Visitor Team</span>
+                    <input type="text" placeholder="The Bad Guys" ng-model="game.visitor" required>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">City</span>
+                    <input type="text" placeholder="Spokane" ng-model="player.city" required>
+                </label>
+                <label class="item item-input item-select">
+                    <span class="input-label">State</span>
+                    <select ng-model="player.state" ng-options="v for (k, v) in states" required>
+                        <option value="">Select a State</option>
+                    </select>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="popup-buttons">
+        <button ng-if="!player.update" class="button button-positive" ng-click="addGame(game)">Add game</button>
+        <button ng-if="player.update" class="button button-balanced" ng-click="editPlayer(player)">Save Changes</button>
+        <button class="button button-light" ng-click="closeModal()">Exit</button>
+    </div>
+</div>
+
+
+

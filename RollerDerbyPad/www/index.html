@@ -9,6 +9,8 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
+    <link href="css/popover.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -41,11 +43,13 @@
     <!-- modal -->
     <div ng-if="currentModal != &apos;&apos;" class="backdrop visible active"></div>
     <div ng-if="currentModal != &apos;&apos;" class="popup-container popup-showing active">
-        <div ng-if="currentModal === &apos;accountModal&apos;"><account-modal></account-modal></div>
-        <div ng-if="currentModal === &apos;teamModal&apos;"><team-modal></team-modal></div>
-        <div ng-if="toast.type === &apos;error&apos;" ng-show="toast.toggle" class="bar bar-footer bar-assertive" ng-class="{slideUp: toast.toggle, slideDown: !toast.toggle}">
-          <div class="title">{{toast.message}}</div>
-        </div>
+      <div ng-if="currentModal === &apos;accountModal&apos;"><account-modal></account-modal></div>
+      <div ng-if="currentModal === &apos;teamModal&apos;"><team-modal></team-modal></div>
+      <div ng-if="currentModal === &apos;playerModal&apos;"><player-modal></player-modal></div>
+      <div ng-if="currentModal === &apos;gameModal&apos;"><game-modal></game-modal></div>
+      <div ng-if="toast.type === &apos;error&apos;" ng-show="toast.toggle" class="bar bar-footer bar-assertive" ng-class="{slideUp: toast.toggle, slideDown: !toast.toggle}">
+        <div class="title">{{toast.message}}</div>
+      </div>
     </div>
 
     <!-- libraries -->
@@ -79,5 +83,8 @@
     <script src="js/directives/navBar.js"></script>
     <script src="js/directives/accountModal.js"></script>
     <script src="js/directives/teamModal.js"></script>
+    <script src="js/directives/playerModal.js"></script>
+    <script src="js/directives/gameModal.js"></script>
+
   </body>
 </html>
