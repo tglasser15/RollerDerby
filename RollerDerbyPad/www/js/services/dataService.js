@@ -40,6 +40,12 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
             return query.find();
         }
 
+        , getGames = function() {
+            var query = new Parse.Query(gameTable);
+            query.include("homeTeam");
+            return query.find();
+        }
+
         , getTeam = function(teamId) {
             var query = new Parse.Query(teamTable);
             return query.get(teamId);
@@ -48,6 +54,11 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
         , getPlayer = function(playerId) {
             var query = new Parse.Query(playerTable);
             return query.get(playerId);
+        }
+
+        , getGame = function(gameId) {
+            var query = new Parse.Query(gameTable);
+            return query.get(gameId);
         }
 
         // set functions
@@ -102,13 +113,17 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
         }
 
         , registerGame = function(game) {
+            console.log(game);
             var newGame = new gameTable();
             newGame.set("date", game.date);
+            newGame.set("time", game.time.toString());
             newGame.set("homeTeam", game.home);
             newGame.set("visitorTeam", game.visitor);
-            newGame.set("location", game.city + " " + game.state);
+            newGame.set("location", game.city + ", " + game.state);
             newGame.set("city", game.city);
             newGame.set("state", game.state);
+            newGame.set("scoreDifference", game.difference);
+            newGame.set("status", game.status);
             return newGame.save();
         }
 
@@ -152,6 +167,17 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
             return parsePlayer.save();
         }
 
+        , updateGame = function(game, parseGame) {
+            parseGame.set("date", game.date);
+            parseGame.set("time", game.time.toString());
+            parseGame.set("homeTeam", game.home);
+            parseGame.set("visitorTeam", game.visitor);
+            parseGame.set("location", game.city + ", " + game.state);
+            parseGame.set("city", game.city);
+            parseGame.set("state", game.state);
+            return parseGame.save();
+        }
+
         , removeAccount = function() {
             var currentUser = getCurrentUser();
             return currentUser.destroy();
@@ -172,6 +198,10 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
             return player.destroy();
         }
 
+        , removeGame = function(game) {
+            return game.destroy();
+        }
+
         , logOut = function() {  //on logout, clear local storage for next visit
             Parse.User.logOut();
             toastService.success(messageService.toast.logoutSuccess);
@@ -184,8 +214,10 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
         , getCurrentUser: getCurrentUser
         , getTeams: getTeams
         , getPlayers: getPlayers
+        , getGames: getGames
         , getTeam: getTeam
         , getPlayer: getPlayer
+        , getGame: getGame
         , register: register
         , registerTeam: registerTeam
         , registerPlayer: registerPlayer
@@ -194,10 +226,12 @@ rollerDerby.factory('dataService', function ($location, $timeout, $rootScope, me
         , updateAccount: updateAccount
         , updateTeam: updateTeam
         , updatePlayer: updatePlayer
+        , updateGame: updateGame
         , removeAccount: removeAccount
         , removeTeamFromUser: removeTeamFromUser
         , removeTeam: removeTeam
         , removePlayer: removePlayer
+        , removeGame: removeGame
         , logIn: logIn
         , logOut: logOut
         , getCurrentTeam: getCurrentTeam

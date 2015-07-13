@@ -15,30 +15,27 @@
                         <div class="col">Status</div>
                         <div class="col"></div>
                     </div>
-                    <div class="row">
+                    <div class="row" ng-repeat="game in games | orderBy:'attributes.date'">
                         <div class="col">
-                            <a ng-click="" class="item">
-                                <i class=""></i>
-                                Date
-                            </a>
+                            <p class="item">{{game.get("date") | date:'MM-dd-yyyy'}} {{game.get("time") | date:'hh:mm a'}}</p>
                         </div>
                         <div class="col">
-                            <p class="item">home</p>
+                            <p class="item">{{game.get("homeTeam").get("teamName")}}</p>
                         </div>
                         <div class="col">
-                            <p class="item">visitor</p>
+                            <p class="item">{{game.get("visitorTeam")}}</p>
                         </div>
                         <div class="col">
-                            <p class="item">location</p>
+                            <p class="item">{{game.get("location")}}</p>
                         </div>
                         <div class="col">
-                            <p class="item">100</p>
+                            <p class="item">{{game.get("scoreDifference")}}</p>
                         </div>
                         <div class="col">
-                            <p class="item">status</p>
+                            <p class="item">{{game.get("status")}}</p>
                         </div>
                         <div class="col" ng-click="">
-                            <button class="button button-positive viewStats" ng-click="">View Game</button>
+                            <button class="button button-royal viewStats" ng-click="viewGame(game)">View Game</button>
                         </div>
                     </div>
 
