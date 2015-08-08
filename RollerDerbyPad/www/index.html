@@ -38,7 +38,11 @@
       <div class="title">{{toast.message}}</div>
     </div>
 
-    <nav-bar ng-hide="currentPage === &apos;login&apos; || currentPage === &apos;register&apos;"></nav-bar>
+    <nav-bar ng-hide="currentPage === &apos;login&apos; ||
+                      currentPage === &apos;register&apos; ||
+                      currentPage === 'gameplay'"></nav-bar>
+
+    <game-bar ng-show="currentPage === 'gameplay'"></game-bar>
 
     <!-- modal -->
     <div ng-if="currentModal != &apos;&apos;" class="backdrop visible active"></div>
@@ -72,6 +76,7 @@
     <script src="js/controllers/homeController.js"></script>
     <script src="js/controllers/gameController.js"></script>
     <script src="js/controllers/teamController.js"></script>
+    <script src="js/controllers/gameplayController.js"></script>
 
     <!-- services -->
     <script src="js/services/viewService.js"></script>
@@ -81,6 +86,7 @@
 
     <!-- directives -->
     <script src="js/directives/navBar.js"></script>
+    <script src="js/directives/gameBar.js"></script>
     <script src="js/directives/accountModal.js"></script>
     <script src="js/directives/teamModal.js"></script>
     <script src="js/directives/playerModal.js"></script>

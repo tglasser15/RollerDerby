@@ -32,6 +32,10 @@ var rollerDerby = angular.module('rollerDerby', ['ionic'])
         url: "/games",
         templateUrl: "templates/pages/games.html"
       })
+        .state('gameplay', {
+          url: "/gameplay",
+          templateUrl: "templates/pages/gameplay.html"
+        })
       ;
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/login');

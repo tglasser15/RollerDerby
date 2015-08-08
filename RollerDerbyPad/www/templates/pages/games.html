@@ -17,7 +17,7 @@
                     </div>
                     <div class="row" ng-repeat="game in games | orderBy:'attributes.date'">
                         <div class="col">
-                            <p class="item">{{game.get("date") | date:'MM-dd-yyyy'}} {{game.get("time") | date:'hh:mm a'}}</p>
+                            <p class="item">{{game.get("date") | date:'MM-dd-yyyy'}} | {{game.get("time") | date:'hh:mm a'}}</p>
                         </div>
                         <div class="col">
                             <p class="item">{{game.get("homeTeam").get("teamName")}}</p>

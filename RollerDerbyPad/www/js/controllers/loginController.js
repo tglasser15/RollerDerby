@@ -13,23 +13,24 @@ rollerDerby.controller('loginController',
 
         // login function
         $scope.login = function(user) {
-            if(viewService.validateAreaByFormName('loginForm'))
-            {
-                dataService.logIn(user).then(function(user) {
-                    viewService.goToPage('/home');
-                    $timeout(function() {
-                        toastService.success(messageService.toast.loginSuccess(user));
-                    });
-
-                }, function(error) {
-                    $timeout(function() {
-                        toastService.error(messageService.toast.error(error));
-                    });
-
-                });
-            } else {
-                toastService.error(messageService.toast.missingFields);
-            }
+            viewService.goToPage('/home');
+            //if(viewService.validateAreaByFormName('loginForm'))
+            //{
+            //    dataService.logIn(user).then(function(user) {
+            //        viewService.goToPage('/home');
+            //        $timeout(function() {
+            //            toastService.success(messageService.toast.loginSuccess(user));
+            //        });
+            //
+            //    }, function(error) {
+            //        $timeout(function() {
+            //            toastService.error(messageService.toast.error(error));
+            //        });
+            //
+            //    });
+            //} else {
+            //    toastService.error(messageService.toast.missingFields);
+            //}
         };
 
         $scope.signUp = function() {
